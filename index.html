@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapic.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<!----hero Section Start---->
+
+<div class="hero">
+    <nav>
+        <h2 class="logo">Portfo<span>lio</span></h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" class="btn">Subscribe</a>
+    </nav>
+
+    <div class="content">
+        <h4>Hello, I am</h4>
+        <h1>Michelle <span>Anne</span></h1>
+        <h3>Orlanda</h3>
+        <div class="newslatter">
+            <form>
+                <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                <input type="submit" name="submit" value="Start">
+            </form>
+        </div>
+    </div>
+</div>
+
+    <!----About section start---->
+    <section class="about">
+        <div class="main">
+            <img src="img/me4.jpg">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h6>Computer <span>Engineering</span> Student</h5>
+                <p>I am currently a second year student at Pangasinan State University - Urdaneta City Campus. I am the first born child in the family.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Personal')">Personal</p>
+                    <p class="tab-links" onclick="opentab('Favorites')">Favorites</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Personal">
+                    <ul>
+                        <li><span>Age</span><br>20 years old</li>
+                        <li><span>Birth Date</span><br>February 27, 2003</li>
+                        <li><span>Birth Place</span><br>Bani, Pangasinan</li>
+                        <li><span>Home Address</span><br>Dacap Norte, Bani, Pangasinan</li>
+                        <li><span>Current Address</span><br>San Vicente, Urdaneta City, Pangasinan</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Favorites">
+                    <ul>
+                        <li><span>Color</span><br>Blue</li>
+                        <li><span>Place</span><br>Beach</li>
+                        <li><span>Drink</span><br>Coffee</li>
+                        <li><span>Animal</span><br>Cat</li>
+                        <li><span>Person</span><br>Mom</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Elementary</span><br>Dacap Norte Elementary School</li>
+                        <li><span>High School</span><br>Dacap Norte National High School</li>
+                        <li><span>College</span><br>Pangasinan State University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----Portfolio section start---->
+    <div id="portfolio">
+        <div class="container">
+            <h5 class="sub-title">Hobbies</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/hb1.jpg">
+                    <div class="layer">
+                        <h6>Wathing Movies</h6>
+                        <p>I love watching movies. My most watched genre is action movies and less likely to watch horror movies. I also love watching cartoon and animated movies to heal my inner child.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/hb2.jpg">
+                    <div class="layer">
+                        <h6>Listening to Music</h6>
+                        <p>Listening to music makes me think and analyze things more clear. I am listening to music most of the time when doing my school activities or assignments.</p>
+                        <a href="https://open.spotify.com/playlist/4Yz3tBiB0ShnvTJ0yAwizA?si=2d495ae98b6540e6"><i class="fa-solid fa-link"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/hb3.jpg">
+                    <div class="layer">
+                        <h6>Reading Books</h6>
+                        <p>I love reading fictional books. My most red genre is mystery/thriller. </p>
+                        <a href="https://www.wattpad.com/story/4499067-the-peculiars%27-tale"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!----Contact Me---->
+    <div class="contact">
+        <form>
+            <p>Feedback</p>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!----footer start---->
+    <div class="footer">
+        <p>Michelle Anne O. Orlanda</p>
+        <p>wala na ko malagay</p>
+        <div class="social">
+            <a href="https://www.facebook.com/misyel.orlanda/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com/ms.yeeelll?igshid=ZGUzMzM3NWJiOQ=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="tiktok.com/@misyeeelll"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <p class="end">Copyright by misyel</p>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>
